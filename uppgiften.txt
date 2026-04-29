@@ -1,0 +1,89 @@
+Projekt: Bygg en miniräknare i Python
+Mål
+I det här projektet ska du stegvis bygga en fungerande miniräknare. Du börjar med enkla beräkningar och utvecklar sedan programmet så att det blir mer flexibelt och användbart.
+
+Del 1: En enkel beräkning
+Börja med ett mycket enkelt program.
+tal1 = 5
+tal2 = 3
+
+
+summa = tal1 + tal2
+
+
+print(summa)
+Uppgift:
+Kör programmet.
+Ändra talen.
+Testa även -, * och /.
+
+Del 2: Använd input
+Nu ska användaren få skriva in talen.
+tal1 = float(input("Skriv in första talet: "))
+tal2 = float(input("Skriv in andra talet: "))
+
+
+print(tal1 + tal2)
+Uppgift:
+Testa programmet.
+Vad händer om du skriver ett decimaltal?
+
+Del 3: Välj räknesätt
+Nu ska användaren också välja vilken operation som ska utföras.
+Uppgift:
+Låt användaren skriva in +, -, * eller /
+Använd if-satser för att välja rätt beräkning
+Exempel:
+operator = input("Välj räknesätt (+, -, *, /): ")
+
+
+if operator == "+":
+    print(tal1 + tal2)
+
+Del 4: Strukturera med funktioner
+Nu ska du göra koden tydligare genom att använda funktioner.
+Uppgift:
+Skapa funktioner för varje räknesätt:
+def addera(a, b):
+    return a + b
+Gör motsvarande för subtraktion, multiplikation och division
+Använd funktionerna i ditt program
+
+Del 5: Upprepa beräkningar
+Nu ska miniräknaren kunna användas flera gånger.
+Uppgift:
+Lägg in en loop (while)
+Låt programmet fortsätta tills användaren vill avsluta
+Tips:
+while True:
+    # din kod här
+
+Del 6: Hantera fel
+Program kraschar om man till exempel delar med noll.
+Uppgift:
+Hantera division med noll
+Ge ett tydligt felmeddelande istället för att programmet kraschar
+
+Fördjupning (valfria uppgifter)
+1. Fler operationer
+Lägg till:
+upphöjt till (**)
+heltalsdivision (//)
+
+2. Snyggare meny
+Visa en tydlig meny:
+1: Addition
+2: Subtraktion
+3: Multiplikation
+4: Division
+
+3. Historik
+Spara tidigare beräkningar i en lista
+Skriv ut dem på slutet
+
+4. Avancerad
+Låt användaren skriva en hel beräkning, t.ex. 3 + 4
+Dela upp strängen och räkna ut svaret
+
+
+
